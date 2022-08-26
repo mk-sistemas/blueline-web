@@ -37,9 +37,11 @@
   ],
   "overrides": [],
   "plugins": ["react", "jsx-a11y", "prettier"],
+  "ignorePatterns": [".eslintrc.json", "vite.config.ts"],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "react/prop-types": "off",
     "prettier/prettier": ["error", { "endOfLine": "auto" }, { "usePrettierrc": true }]
   }
