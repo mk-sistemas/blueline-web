@@ -18,6 +18,12 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   },
   "extends": [
@@ -30,10 +36,8 @@
     "plugin:prettier/recommended"
   ],
   "overrides": [],
-  "plugins": ["react", "jsx-a11y", "simple-import-sort", "prettier"],
+  "plugins": ["react", "jsx-a11y", "prettier"],
   "rules": {
-    "simple-import-sort/imports": "warn",
-    "simple-import-sort/exports": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/triple-slash-reference": "off",
     "react/prop-types": "off",
