@@ -41,6 +41,6 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/triple-slash-reference": "off",
     "react/prop-types": "off",
-    "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
+    "prettier/prettier": ["error", { "endOfLine": "auto" }, { "usePrettierrc": true }]
   }
 }
