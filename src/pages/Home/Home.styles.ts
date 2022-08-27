@@ -8,7 +8,8 @@ export const StyledMain = styled.main`
   padding: 1.5em;
 `;
 
-export const StyledH1 = styled.h1`
+export const StyledTitle = styled.h1`
   font-size: 2.5rem;
   color: ${({ theme }) => theme.colors.black};
+  margin-bottom: 1.5em;
 `;

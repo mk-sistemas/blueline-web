@@ -1,9 +1,12 @@
-import { StyledH1, StyledMain } from "./Home.styles";
+import { StyledTitle, StyledMain } from "./Home.styles";
+
+import { Summary } from "@components";
 
 export const Home = () => {
   return (
     <StyledMain>
-      <StyledH1>BlueLine v1.0.0</StyledH1>
+      <StyledTitle>BlueLine v1.0.0</StyledTitle>
+      <Summary />
     </StyledMain>
   );
 };
