@@ -25,5 +25,9 @@ declare module "styled-components" {
       warning: string;
       info: string;
     };
+    fontFace: {
+      heading: string;
+      paragraph: string;
+    };
   }
 }
