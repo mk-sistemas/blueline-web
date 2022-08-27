@@ -6,8 +6,15 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.light};
-    color: ${({ theme }) => theme.colors.black};
+    font-family:  ${({ theme }) => theme.fontFace.paragraph}, sans-serif;
     font-size: 1.8rem;
+    font-weight: lighter;
+    color: ${({ theme }) => theme.colors.black};
+  }
+  
+  h1, h2, h3,  h4, h5, h6 {
+    font-family:  ${({ theme }) => theme.fontFace.heading}, sans-serif;
+    font-weight: 600;
   }
 `;
 
@@ -34,5 +41,9 @@ export const globalMainTheme = {
     ok: "#3D9E2C",
     warning: "#FDBC40",
     info: "#3CB2EA",
+  },
+  fontFace: {
+    heading: "Raleway",
+    paragraph: "Quicksand",
   },
 };

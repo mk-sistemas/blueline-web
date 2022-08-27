@@ -1,10 +1,11 @@
 import { ThemeProvider } from "styled-components";
 import { globalMainTheme, GlobalStyle } from "./assets/css/global";
+import { Home } from "@pages";
 
 function App() {
   return (
     <ThemeProvider theme={globalMainTheme}>
-      <span>Running...</span>
+      <Home />
       <GlobalStyle />
     </ThemeProvider>
   );
