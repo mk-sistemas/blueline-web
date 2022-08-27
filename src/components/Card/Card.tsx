@@ -1,7 +1,7 @@
 import { Paper } from "@components";
-import styled from "styled-components";
+import { StyledHeading, StyledContent, StyledDiv } from "./Card.styles";
 
-type ColorStrings = "black" | "warning" | "danger" | "info" | "ok";
+export type ColorStrings = "black" | "warning" | "danger" | "info" | "ok";
 
 type CardProps = {
   title: string;
@@ -19,27 +19,3 @@ export const Card = ({ title, information, type = "black" }: CardProps) => {
     </Paper>
   );
 };
-
-const StyledDiv = styled.div`
-  cursor: pointer;
-`;
-
-interface StyleHeadingProps {
-  color: ColorStrings;
-}
-
-const StyledHeading = styled.span<StyleHeadingProps>`
-  display: block;
-  width: 100%;
-  margin: 0.5em 0;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: ${({ theme, color }) => theme.colors[color]};
-`;
-
-const StyledContent = styled(StyledHeading)`
-  font-family: ${({ theme }) => theme.fontFace.paragraph}, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 800;
-`;

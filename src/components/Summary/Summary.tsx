@@ -1,5 +1,5 @@
 import { Card } from "@components";
-import styled from "styled-components";
+import { StyledDiv } from "./Summary.styles";
 
 export const Summary = () => {
   return (
@@ -12,14 +12,3 @@ export const Summary = () => {
     </StyledDiv>
   );
 };
-
-const StyledDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  & > * {
-    margin-right: 1em;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-`;
